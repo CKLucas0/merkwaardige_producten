@@ -9,10 +9,10 @@ function randint(min, max){
 function oefening() {
     a = randint(2,12)
     b = randint(2,12)
+    t = randint(0, 1) === 1 ? "-" : "+"
     ex1 = randint(0,3)
     ex2 = randint(0,3)
-
-    return ("(" + a + "a" + exponents[ex1] + " + " + b + "b" + exponents[ex2] + ")² = " + a**2 + "a" + exponents[(ex1*2)+1] + " + " + 2*a*b + "a" + exponents[ex1]+"b" + exponents[ex2] + " + " + b**2 + "b" + exponents[(ex2*2)+1] )
+    return (`(${a}a${exponents[ex1]} ${t} ${b}b${exponents[ex2]}) = ${a**2}a${exponents[(ex1*2)+1]} ${t} ${2*a*b}a${exponents[ex1]}b${exponents[ex2]} + ${b**2}b${exponents[(ex2*2)+1]}`)
 }
 
 function AddToList() {
@@ -20,4 +20,3 @@ function AddToList() {
     li.textContent = oefening()
     list.append(li)
 }
-
