@@ -1,5 +1,4 @@
-// vars
-// list = document.getElementById("list")
+// var
 exponents = ["","²","³","⁴","⁵","⁶","⁷","⁸"]
 
 // functions
