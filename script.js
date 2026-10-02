@@ -20,7 +20,7 @@ function oefening() {
     t = randint(0, 1) === 1 ? "-" : "+"
     ex1 = randint(0,maxe)
     ex2 = randint(0,maxe)
-    return (`(${a}${la}${exponents[ex1]} ${t} ${b}${lb}${exponents[ex2]}) = ${a**2}${la}${exponents[(ex1*2)+1]} ${t} ${2*a*b}${la}${exponents[ex1]}${lb}${exponents[ex2]} + ${b**2}${lb}${exponents[(ex2*2)+1]}`)
+    return (`(${a}${la}${exponents[ex1]} ${t} ${b}${lb}${exponents[ex2]})² = ${a**2}${la}${exponents[(ex1*2)+1]} ${t} ${2*a*b}${la}${exponents[ex1]}${lb}${exponents[ex2]} + ${b**2}${lb}${exponents[(ex2*2)+1]}`)
 }
 
 function AddToList() {
